@@ -1,0 +1,118 @@
+<section
+  id="produtos"
+  class="featured-products"
+  aria-labelledby="featured-products-title"
+>
+  <div class="featured-products__container">
+    <header
+      class="featured-products__header"
+      strataReveal
+    >
+      <div>
+        <span class="strata-eyebrow">
+          Feito pela STRATA
+        </span>
+
+        <h2 id="featured-products-title">
+          Peças que transformam
+          <span>ideias em realidade.</span>
+        </h2>
+      </div>
+
+      <p>
+        Conheça algumas possibilidades produzidas em impressão 3D.
+        Cores, tamanhos e acabamentos podem ser personalizados.
+      </p>
+    </header>
+
+    <div
+      class="featured-products__filters"
+      role="group"
+      aria-label="Filtrar produtos por categoria"
+      strataReveal
+      [strataRevealDelay]="100"
+    >
+      @for (category of categories; track category) {
+        <button
+          type="button"
+          class="featured-products__filter"
+          [attr.aria-pressed]="selectedCategory() === category"
+          (click)="selectCategory(category)"
+        >
+          {{ category }}
+        </button>
+      }
+    </div>
+
+    <div
+      class="featured-products__grid"
+      aria-live="polite"
+    >
+      @for (
+        product of visibleProducts();
+        track product.id;
+        let index = $index
+      ) {
+        <article
+          class="product-card"
+          strataReveal
+          [strataRevealDelay]="index * 80"
+          [strataRevealDistance]="32"
+        >
+          <div class="product-card__image">
+            <img
+              [src]="product.image"
+              [alt]="product.imageAlt"
+              width="900"
+              height="900"
+              loading="lazy"
+              decoding="async"
+            />
+
+            @if (product.badge) {
+              <span class="product-card__badge">
+                {{ product.badge }}
+              </span>
+            }
+          </div>
+
+          <div class="product-card__content">
+            <span class="product-card__category">
+              {{ product.category }}
+            </span>
+
+            <h3>{{ product.name }}</h3>
+
+            <p class="product-card__description">
+              {{ product.description }}
+            </p>
+
+            <footer class="product-card__footer">
+              <div class="product-card__price">
+                <small>{{ product.pricePrefix }}</small>
+                <strong>{{ formatPrice(product.price) }}</strong>
+              </div>
+
+              <a
+                class="product-card__action"
+                href="#contato"
+                [attr.aria-label]="'Tenho interesse em ' + product.name"
+              >
+                <span>Tenho interesse</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </footer>
+          </div>
+        </article>
+      }
+    </div>
+
+    <p
+      class="featured-products__notice"
+      strataReveal
+    >
+      Valores iniciais estimados. O preço final pode variar conforme
+      tamanho, material, acabamento e nível de personalização.
+    </p>
+  </div>
+</section>

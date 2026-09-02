@@ -1,0 +1,59 @@
+<section
+  id="como-funciona"
+  class="process"
+  aria-labelledby="process-title"
+>
+
+  <div class="process__container">
+
+    <header
+      class="process__header"
+      strataReveal
+    >
+
+      <div>
+        <span class="strata-eyebrow">
+          Do conceito à realidade
+        </span>
+
+        <h2 id="process-title">
+          Como sua ideia ganha forma.
+        </h2>
+      </div>
+
+      <p>
+        Um processo simples e transparente para transformar sua
+        necessidade em uma peça criada especialmente para você.
+      </p>
+
+    </header>
+
+    <ol class="process__steps">
+
+      @for (step of steps; track step.number; let index = $index) {
+
+        <li
+          class="process-step"
+          strataReveal
+          [strataRevealDelay]="index * 120"
+          [strataRevealDistance]="40"
+        >
+
+          <div class="process-step__marker">
+            <span>{{ step.number }}</span>
+          </div>
+
+          <div class="process-step__content">
+            <h3>{{ step.title }}</h3>
+            <p>{{ step.description }}</p>
+          </div>
+
+        </li>
+
+      }
+
+    </ol>
+
+  </div>
+
+</section>

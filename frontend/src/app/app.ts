@@ -1,12 +1,23 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {
+  ChangeDetectionStrategy,
+  Component,
+} from '@angular/core';
+import {
+  RouterOutlet,
+} from '@angular/router';
+
+import {
+  Header,
+} from './core/layout/header/header';
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'strata-root',
-  styleUrl: './app.scss',
+  imports: [
+    Header,
+    RouterOutlet,
+  ],
   templateUrl: './app.html',
+  styleUrl: './app.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class App {
-  protected readonly title = signal('frontend');
-}
+export class App {}

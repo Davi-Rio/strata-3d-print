@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  display: block;
+  flex: 1;
+}
+
+.skip-link {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2000;
+  padding: 0.75rem 1rem;
+  border-radius: var(--strata-radius-md);
+  color: var(--strata-color-white);
+  background: var(--strata-color-ink);
+  font-weight: 700;
+  transform: translateY(-200%);
+  transition: transform var(--strata-transition-fast);
+
+  &:focus {
+    transform: translateY(0);
+  }
+}
