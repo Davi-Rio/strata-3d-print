@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@fontsource-variable/league-spartan/wght.css' as league-spartan-font;
+@use '@fontsource-variable/manrope/wght.css' as manrope-font;
+
+@use './styles/abstracts/tokens';
+@use './styles/base/reset';
+@use './styles/base/typography';
