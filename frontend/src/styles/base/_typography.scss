@@ -1,0 +1,62 @@
+body {
+  color: var(--strata-color-text);
+  background: var(--strata-color-background);
+  font-family: var(--strata-font-body);
+  font-size: var(--strata-font-size-base);
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--strata-color-text);
+  font-family: var(--strata-font-display);
+  font-weight: 700;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2.75rem, 7vw, var(--strata-font-size-5xl));
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, var(--strata-font-size-4xl));
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, var(--strata-font-size-3xl));
+}
+
+p {
+  color: var(--strata-color-text-muted);
+  text-wrap: pretty;
+}
+
+strong {
+  font-weight: 700;
+}
+
+small {
+  font-size: var(--strata-font-size-sm);
+}
+
+.strata-eyebrow {
+  color: var(--strata-color-accent-hover);
+  font-family: var(--strata-font-display);
+  font-size: var(--strata-font-size-sm);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.strata-display-title {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}

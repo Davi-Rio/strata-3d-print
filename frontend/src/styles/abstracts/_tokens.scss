@@ -1,0 +1,61 @@
+:root {
+  color-scheme: light;
+
+  --strata-color-ink: #21282e;
+  --strata-color-blue: #7e95b0;
+  --strata-color-silver: #a8a8a8;
+  --strata-color-gold: #bfa06f;
+  --strata-color-cream: #f4f1e9;
+  --strata-color-white: #ffffff;
+
+  --strata-color-background: #faf9f6;
+  --strata-color-surface: #ffffff;
+  --strata-color-surface-alternate: var(--strata-color-cream);
+  --strata-color-text: var(--strata-color-ink);
+  --strata-color-text-muted: #626b72;
+  --strata-color-border: #d9dddf;
+
+  --strata-color-primary: var(--strata-color-ink);
+  --strata-color-primary-hover: #303b43;
+  --strata-color-accent: var(--strata-color-gold);
+  --strata-color-accent-hover: #aa8959;
+  --strata-color-focus: var(--strata-color-blue);
+
+  --strata-font-display: 'League Spartan Variable', 'Arial Narrow', sans-serif;
+  --strata-font-body: 'Manrope Variable', 'Segoe UI', sans-serif;
+
+  --strata-font-size-xs: 0.75rem;
+  --strata-font-size-sm: 0.875rem;
+  --strata-font-size-base: 1rem;
+  --strata-font-size-lg: 1.125rem;
+  --strata-font-size-xl: 1.25rem;
+  --strata-font-size-2xl: 1.5rem;
+  --strata-font-size-3xl: 2rem;
+  --strata-font-size-4xl: 2.75rem;
+  --strata-font-size-5xl: 4rem;
+
+  --strata-space-1: 0.25rem;
+  --strata-space-2: 0.5rem;
+  --strata-space-3: 0.75rem;
+  --strata-space-4: 1rem;
+  --strata-space-5: 1.5rem;
+  --strata-space-6: 2rem;
+  --strata-space-7: 3rem;
+  --strata-space-8: 4rem;
+  --strata-space-9: 6rem;
+
+  --strata-radius-sm: 0.375rem;
+  --strata-radius-md: 0.75rem;
+  --strata-radius-lg: 1.25rem;
+  --strata-radius-pill: 999px;
+
+  --strata-shadow-sm: 0 1px 3px rgb(33 40 46 / 8%);
+  --strata-shadow-md: 0 12px 30px rgb(33 40 46 / 12%);
+  --strata-shadow-lg: 0 24px 60px rgb(33 40 46 / 16%);
+
+  --strata-container-width: 75rem;
+  --strata-container-padding: clamp(1rem, 4vw, 2rem);
+
+  --strata-transition-fast: 150ms ease;
+  --strata-transition-base: 250ms ease;
+}
