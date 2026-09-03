@@ -53,7 +53,7 @@ export class FeaturedProducts {
       category: 'Utilidades',
       description:
         'Conjunto criativo com peças removíveis e combinações de cores personalizadas.',
-      image: '/images/products/sardinhas-interativas.png',
+      image: '/images/products/sardinhas-interativas.webp',
       imageAlt:
         'Três conjuntos de sardinhas interativas produzidos em impressão 3D',
       price: 39.9,
@@ -66,7 +66,7 @@ export class FeaturedProducts {
       category: 'Articulados',
       description:
         'Modelo articulado com movimento livre e acabamento em filamento mesclado.',
-      image: '/images/products/dinossauro-articulado.png',
+      image: '/images/products/dinossauro-articulado.webp',
       imageAlt: 'Dinossauro articulado produzido em impressão 3D',
       price: 39.9,
       pricePrefix: 'A partir de',
@@ -78,7 +78,7 @@ export class FeaturedProducts {
       category: 'Decoração',
       description:
         'Peça decorativa de grande impacto visual, produzida sob encomenda.',
-      image: '/images/products/espada-fantasia.png',
+      image: '/images/products/espada-fantasia.webp',
       imageAlt: 'Espada decorativa de fantasia impressa em 3D',
       price: 149.9,
       pricePrefix: 'A partir de',
@@ -90,7 +90,7 @@ export class FeaturedProducts {
       category: 'Miniaturas',
       description:
         'Conjunto com sete personagens detalhados para aventuras e jogos de mesa.',
-      image: '/images/products/miniaturas-rpg.png',
+      image: '/images/products/miniaturas-rpg.webp',
       imageAlt: 'Conjunto com sete miniaturas de personagens para RPG',
       price: 109.9,
       pricePrefix: 'Estimativa',
@@ -102,7 +102,7 @@ export class FeaturedProducts {
       category: 'Miniaturas',
       description:
         'Miniatura compacta e delicada, ideal para decoração ou presente.',
-      image: '/images/products/capivara-mini.png',
+      image: '/images/products/capivara-mini.webp',
       imageAlt: 'Miniatura marrom de capivara produzida em impressão 3D',
       price: 14.9,
       pricePrefix: 'Estimativa',
@@ -113,7 +113,7 @@ export class FeaturedProducts {
       category: 'Colecionáveis',
       description:
         'Figura colecionável com base expositora e alto nível de detalhes.',
-      image: '/images/products/guerreiro-fantastico.png',
+      image: '/images/products/guerreiro-fantastico.webp',
       imageAlt:
         'Figura branca de guerreiro fantástico com base expositora preta',
       price: 89.9,

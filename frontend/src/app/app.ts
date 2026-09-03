@@ -9,12 +9,13 @@ import {
 import {
   Header,
 } from './core/layout/header/header';
-
+import { Footer } from './core/layout/footer/footer';
 @Component({
   selector: 'strata-root',
   imports: [
-    Header,
     RouterOutlet,
+    Header,
+    Footer,
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss',
