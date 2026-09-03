@@ -1,0 +1,129 @@
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <a
+          class="footer__logo"
+          href="#inicio"
+          aria-label="Voltar ao início da STRATA 3D PRINT"
+        >
+          <svg
+            viewBox="0 0 54 54"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              class="footer__layer footer__layer--blue"
+              d="M27 4 47 15 27 26 7 15 27 4Z"
+            />
+
+            <path
+              class="footer__layer footer__layer--silver"
+              d="m7 24 20 11 20-11"
+            />
+
+            <path
+              class="footer__layer footer__layer--gold"
+              d="m7 33 20 11 20-11"
+            />
+          </svg>
+
+          <span class="footer__logo-text">
+            <strong>STRATA</strong>
+            <small>3D PRINT</small>
+          </span>
+        </a>
+
+        <p>
+          Transformamos ideias em peças reais com criatividade,
+          precisão e impressão 3D.
+        </p>
+
+        <a
+          class="footer__budget"
+          href="#contato"
+        >
+          <span>Solicitar orçamento</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <nav
+        class="footer__navigation"
+        aria-label="Navegação do rodapé"
+      >
+        <h2>Navegação</h2>
+
+        <ul>
+          <li>
+            <a href="#inicio">Início</a>
+          </li>
+
+          <li>
+            <a href="#produtos">Produtos</a>
+          </li>
+
+          <li>
+            <a href="#como-funciona">Como funciona</a>
+          </li>
+
+          <li>
+            <a href="#sobre-nos">Sobre nós</a>
+          </li>
+
+          <li>
+            <a href="#contato">Orçamento</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__contact">
+        <h2>Fale com a STRATA</h2>
+
+        <ul>
+          <li>
+            <span>WhatsApp</span>
+
+            <a
+              [href]="whatsappUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              (81) 99859-4877
+            </a>
+          </li>
+
+          <li>
+            <span>E-mail</span>
+
+            <a [href]="emailUrl">
+              strata.3dprint@gmail.com
+            </a>
+          </li>
+
+          <li>
+            <span>Instagram</span>
+
+            <a
+              [href]="instagramUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @strata.3dprint
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>
+        © {{ currentYear }} STRATA 3D PRINT. Todos os direitos reservados.
+      </p>
+
+      <p>
+        Produzido camada por camada.
+      </p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,137 @@
+<header class="site-header">
+
+  <div class="announcement">
+    <div class="announcement__content">
+      <p>Transformamos ideias em realidade com impressão 3D.</p>
+
+      <a
+        routerLink="/"
+        fragment="contato"
+        (click)="closeMenu()"
+      >
+        Fale com a STRATA
+      </a>
+    </div>
+  </div>
+
+  <div class="navigation">
+
+    <div class="navigation__content">
+
+      <a
+        class="brand"
+        routerLink="/"
+        aria-label="STRATA 3D PRINT - Página inicial"
+        (click)="closeMenu()"
+      >
+
+        <svg
+          class="brand__symbol"
+          viewBox="0 0 64 64"
+          aria-hidden="true"
+        >
+          <path
+            class="brand__layer brand__layer--top"
+            d="M8.5 18.5 32 5.5l23.5 13L32 31.5z"
+          />
+
+          <path
+            class="brand__layer brand__layer--middle"
+            d="m8.5 29.5 23.5 13 23.5-13"
+          />
+
+          <path
+            class="brand__layer brand__layer--bottom"
+            d="m8.5 41 23.5 13 23.5-13"
+          />
+        </svg>
+
+        <span class="brand__wordmark">
+          <strong>STRATA</strong>
+          <span>3D PRINT</span>
+        </span>
+
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        [class.menu-toggle--open]="isMenuOpen()"
+        [attr.aria-expanded]="isMenuOpen()"
+        aria-controls="primary-navigation"
+        [attr.aria-label]="isMenuOpen() ? 'Fechar menu' : 'Abrir menu'"
+        (click)="toggleMenu()"
+      >
+        <span
+          class="menu-toggle__icon"
+          aria-hidden="true"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <nav
+        id="primary-navigation"
+        class="primary-navigation"
+        aria-label="Navegação principal"
+        [class.primary-navigation--open]="isMenuOpen()"
+      >
+
+        <a
+          routerLink="/"
+          fragment="inicio"
+          (click)="closeMenu()"
+        >
+          Início
+        </a>
+
+        <a
+          routerLink="/"
+          fragment="produtos"
+          (click)="closeMenu()"
+        >
+          Produtos
+        </a>
+
+        <a
+          routerLink="/"
+          fragment="como-funciona"
+          (click)="closeMenu()"
+        >
+          Como funciona
+        </a>
+
+        <a
+          routerLink="/"
+          fragment="sobre"
+          (click)="closeMenu()"
+        >
+          Sobre nós
+        </a>
+
+        <a
+          class="primary-navigation__mobile-cta"
+          routerLink="/"
+          fragment="contato"
+          (click)="closeMenu()"
+        >
+          Solicitar orçamento
+        </a>
+
+      </nav>
+
+      <a
+        class="navigation__cta"
+        routerLink="/"
+        fragment="contato"
+      >
+        Solicitar orçamento
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
